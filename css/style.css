@@ -30,6 +30,8 @@ a {
         background-image: url("../photo.jpg");
         background-size: cover;
         background-position: center;
+
+        
       } 
       
 article.photocaption {
