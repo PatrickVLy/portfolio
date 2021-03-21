@@ -21,7 +21,7 @@ body{
 a {
         color: #3d3742;
 }
-section.photo {
+.photo {
         position: relative;
         height: 400px;
         width: 100%;
