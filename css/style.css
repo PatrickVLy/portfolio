@@ -212,3 +212,12 @@ img {
       width:500px;
       height: 500px;
     }
+    .image {
+        width: 250px;
+        height: 250px;
+}
+.work-box1, .work-box2, .work-box3, .work-box4, .work-box5, .work-box6{
+    height: 250px;
+    width: 250px;
+}
+}
