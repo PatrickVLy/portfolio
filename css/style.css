@@ -144,8 +144,17 @@ img {
     max-height:100%;
 }
 
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
-
+  .work-main:hover .image, .work-box1:hover .image, .work-box2:hover .image, .work-box3:hover .image, .work-box4:hover .image, .work-box5:hover .image, .work-box6:hover .image{
+    opacity: 0.5;
+  }
 .work-box1 {
     border: 5px solid white;
     margin: 10px;
