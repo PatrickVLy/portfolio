@@ -8,7 +8,12 @@ h1 {
         display: inline-block;
         color: #3d3742;}
 h2 {
-
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ font-size: 24px;
+ text-align: center;
+ align: center;
 }
 nav {
         background-color: #d5cbe3;
@@ -20,6 +25,7 @@ body{
     }
 a {
         color: #3d3742;
+        display: block;
 }
 section.photo {
         display:flex;
@@ -35,28 +41,31 @@ section.photo {
       
 article.photocaption {
         position: absolute;
-        top: 330px;
+        top: 530px;
         right: 10px;
         width: 300px;
         height: 50px;
-        border: 3px solid #f6b6ac;
+        padding: 10px;
         background-color: #f6b6ac;
       }
 
 
 ul li {
     display: inline-block;
+    padding-left: 20px;
 }
+
+
 
 .about{
     display: flex;}
 .about-header{
     position: relative;
-    display: flex;
     padding-right:10px;
     height: 100px;
     margin-top: 0px;
     min-width: 20%;
+    text-align: center;
 }
 
 .about-content{
@@ -75,16 +84,9 @@ display: flex;
 border-bottom: 2px solid #3d3742;
 border-top: 2px solid #3d3742;}
 
-.work-header {
-    position: relative;
-    padding-right:10px;
-    max-height: 50px;
-    margin-top: 0px;
-    min-width: 20%;
-}
+
 .work-content {
     position:relative;
-    width:100%;
     margin-top: 0px;
     border-left: 2px solid #3d3742;
     background-color:#d9b1ba;
@@ -93,86 +95,111 @@ border-top: 2px solid #3d3742;}
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
 }
 
 .work-main{
     display: flex;
+    position: static;
     flex-direction: column;
     flex-wrap: wrap;
     border: 5px solid white;
-    padding: 10px;
-    width: 90%;
-    background-image: url(../photo.jpg);
-    background-size: cover;
-    height: 250px;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+
 }
+
+.work-main-header{
+    position: absolute;
+    top: 245px;
+    right: 15px;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    background-color: #f6b6ac;
+  }
+.work-header {
+    position: relative;
+    padding-right:10px;
+    max-height: 50px;
+    bottom: -20px;
+    min-width: 20%;
+    z-index: 5;
+}
+
+
+
+img {
+    object-fit: cover;
+    z-index: -4;
+    max-width:100%;
+    max-height:100%;
+}
+
+
 
 .work-box1 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    width: 250px;
-    background-image: url(../box1.jpg);
-    background-size: cover;
-    height: 250px;
+    width:300px;
+    height:300px;
 }
 
 .work-box2 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    width:250px;
-    background-image: url(../box2.jpg);
-    background-size: cover;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .work-box3 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    width:250px;
-    background-image: url(../box3.jpg);
-    background-size: cover;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .work-box4 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    width:250px;
-    background-image: url(../box4.jpg);
-    background-size: cover;
-    height: 250px;
+    width:300px;
+    height: 300px;
 }
 
 .work-box5 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    background-image: url(../box5.jpg);
-    background-size: cover;
-    height:250px;
-    width:250px
+    height: 300px;
+    width: 300px;
 }
 
 .work-box6 {
     border: 5px solid white;
-    padding: 10px;
     margin: 10px;
-    width: 250px;
-    background-image: url(../box6.jpg);
-    background-size: cover;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .work-box-header {
     position: relative;
-    left: -10px;
-    top: 200px;
+    left: 0px;
+    top: -100px;
     width: 270px;
     background-color: white;
     margin: 0px;
+    z-index: 4;
 }
 
+@media screen and (max-width: 600px) {
+    #mainphoto {
+      width:500px;
+      height: 500px;
+    }
