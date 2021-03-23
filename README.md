@@ -54,3 +54,5 @@ Since I don't have any applications deployed just yet, I anchored the images to 
 
 What I did was add a media query to the css code so that when the screen size is below 600 pixels the images will resize to a smaller size so that when view on say an IPhone XS Max, the UI will still flow and be user friendly. 
 
+
+
