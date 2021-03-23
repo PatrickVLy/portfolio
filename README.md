@@ -52,7 +52,45 @@ Since I don't have any applications deployed just yet, I anchored the images to 
 6. **WHEN** I resize the page or view the site on various screens and devices<br>
 **THEN** I am presented with a responsive layout that adapts to my viewport<br><br>
 
-What I did was add a media query to the css code so that when the screen size is below 600 pixels the images will resize to a smaller size so that when view on say an IPhone XS Max, the UI will still flow and be user friendly. 
+What I did was add a media query to the css code so that when the screen size is below 600 pixels the images will resize to a smaller size so that when view on say an IPhone XS Max, the UI will still flow and be user friendly. <br><br>
+``` @media screen and (max-width: 600px) {
+    #mainphoto {
+        width:250px;
+        height: 250px;
+    }
+    .image {
+        width: 250px;
+        height: 250px;
+}
+    .work-box1, .work-box2, .work-box3,
+    .work-box4, .work-box5, .work-box6 {
+        height: 250px;
+        width: 250px;
+}
+```
+<hr>
+
+## Technlogy Used
+1. HTML
+2. CSS
+3. [Image Color Picker](https://imagecolorpicker.com/en) to get color palette for CSS design
+<hr>
+
+## Screenshots
+Header, Nav Bar, Profile Image:
+![alt text](header.png)
+![alt text](main.png)
+![alt text](footer.png)
+<hr>
+
+## Extras
+I thought it would be fun to add a pseudo class to the images so that when you hover over them, the opacity of the image changes
+
+
+
+
+
+
 
 
 
